@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Iron Craft — Dark Industrial Theme */
+    --background: 0.11 0.003 270;
+    --foreground: 0.95 0.003 270;
+    --card: 0.14 0.003 270;
+    --card-foreground: 0.95 0.003 270;
+    --popover: 0.16 0.003 270;
+    --popover-foreground: 0.95 0.003 270;
+    --primary: 0.75 0.16 65;
+    --primary-foreground: 0.1 0.003 270;
+    --secondary: 0.18 0.003 270;
+    --secondary-foreground: 0.75 0.003 270;
+    --muted: 0.2 0.003 270;
+    --muted-foreground: 0.65 0.003 270;
+    --accent: 0.75 0.16 65;
+    --accent-foreground: 0.1 0.003 270;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.95 0.003 270;
+    --border: 0.27 0.003 270;
+    --input: 0.2 0.003 270;
+    --ring: 0.75 0.16 65;
+    --radius: 0.25rem;
+    --section-band: 0.17 0.003 270;
+  }
+
+  * {
+    border-color: oklch(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: oklch(var(--background));
+    color: oklch(var(--foreground));
+    font-family: "Barlow", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
